@@ -1,0 +1,72 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: Arial, sans-serif !important;
+}
+
+.header-container {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 10px;
+    background-color: white;
+    color: black;
+}
+
+.logo img {
+    width: 250px;
+    margin-left: 300px;
+}
+
+.contact-info {
+    font-size: 0.8rem;
+    margin-right: 300px;
+}
+
+.contact-info p {
+    margin: 2px 0; /* Controla el espaciado superior e inferior */
+    padding: 0; /* Elimina cualquier relleno adicional */
+}
+
+/* Navbar */
+
+.navbar-nav {
+    display: flex;
+    justify-content: center;
+    gap: 30px; /* Espacio entre los enlaces en pantallas grandes */
+}
+
+.nav-link {
+    color: #FFFFFF !important;
+    font-weight: 600 !important;
+    font-size: 18px !important; /* Tamaño de fuente para pantallas grandes */
+    transition: color 0.3s ease-in-out !important;
+}
+
+.nav-link:hover {
+    color: #f7dd00 !important; /* Efecto hover */
+}
+
+/* Estilos del dropdown */
+.dropdown {
+  position: absolute;
+  right: 70px; /* Ajusta según la distancia que desees del borde derecho */
+  top: 35%;
+  transform: translateY(-50%);
+  z-index: 999; /* Asegura que el dropdown esté por encima de otros elementos */
+}
+
+.dropdown .btn {
+  background-color: white; /* Color de fondo del dropdown */
+  color: #004b23;
+}
+
+/* Estilos del menú desplegable para que esté sobre el carrusel */
+.dropdown-menu {
+  z-index: 1000; /* Mayor nivel para estar por encima del carrusel */
+  position: absolute; /* Asegura que el menú se desplace correctamente */
+}

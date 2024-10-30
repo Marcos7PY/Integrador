@@ -1,0 +1,200 @@
+/* Navbar */
+.navbar-nav {
+    display: flex;
+    justify-content: center;
+    gap: 30px; /* Espacio entre los enlaces en pantallas grandes */
+}
+
+.nav-link {
+    color: #FFFFFF !important;
+    font-weight: 600;
+    font-size: 18px; /* Tamaño de fuente para pantallas grandes */
+    transition: color 0.3s ease-in-out;
+}
+
+.nav-link:hover {
+    color: #f7dd00 !important; /* Efecto hover */
+}
+
+/* Carrito */
+.carrito a {
+    color: #FFFFFF;
+    font-weight: 600;
+}
+
+.carrito img {
+    width: 40px;
+}
+
+/* Media query para pantallas pequeñas */
+@media (max-width: 768px) {
+    .navbar-nav {
+        gap: 10px; /* Reducir el espacio entre los enlaces en pantallas pequeñas */
+    }
+    
+    .nav-link {
+        font-size: 14px; /* Reducir el tamaño de la fuente en pantallas pequeñas */
+        padding: 5px 10px; /* Reducir el espacio de los enlaces en móviles */
+    }
+
+    .carrito img {
+        width: 30px; /* Reducir el tamaño del ícono del carrito en pantallas pequeñas */
+    }
+}
+
+
+/* Carousel */
+.carousel-inner img {
+    height: 500px;
+    object-fit: cover;
+}
+
+/* Sección de productos */
+.menu-section {
+    background-color: #f7f7f7;
+}
+
+.card {
+    width: 20rem;
+    border: none;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1); /* Sombra sutil */
+    transition: transform 0.3s ease-in-out;
+    display: flex;
+    flex-direction: column;
+    height: 100%; /* Para asegurar que todas las tarjetas tengan la misma altura */
+}
+
+.card:hover {
+    transform: scale(1.05); /* Zoom al pasar el cursor */
+}
+
+.card-header {
+    background-color: #027831;
+    color: #FFFFFF;
+    text-align: center;
+    font-weight: bold;
+}
+
+.card-footer {
+    text-align: center;
+    background-color: #027831;
+    color: #FFFFFF;
+    margin-top: auto; /* Empuja el footer hacia abajo */
+}
+
+.custom-btn {
+    background-color: #027831;
+    color: #FFFFFF;
+    border-color: #FFFFFF;
+    transition: background-color 0.3s ease-in-out;
+}
+
+.custom-btn:hover {
+    background-color: #f7dd00;
+    color: #027831;
+    border-color: #f7dd00;
+}
+
+/* Ajuste del cuerpo de las tarjetas */
+.card-body {
+    text-align: center;
+    flex-grow: 1; /* Hace que el cuerpo crezca para llenar el espacio */
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+}
+
+.card-body img {
+    max-height: 300px; /* Limita la altura máxima de la imagen */
+    width: 100%;
+    object-fit: cover;
+}
+
+.card-body i {
+    margin-top: 10px;
+}
+
+/* Descripción de las tarjetas */
+.card-footer {
+    margin-top: auto; /* Empuja el footer hacia abajo */
+    text-align: center;
+    background-color: #027831;
+    color: #FFFFFF;
+    padding: 10px;
+    height: 80px; /* Altura fija para todos los footers */
+}
+
+/* Footer */
+footer {
+    background-color: #333;
+    padding: 20px;
+    color: #FFFFFF;
+    text-align: center;
+}
+
+footer p {
+    margin: 0;
+    font-size: 14px;
+}
+
+/*verProducto*/
+
+.product-details {
+    padding: 20px;
+    background-color: #f9f9f9;
+    border-radius: 10px;
+    box-shadow: 0px 4px 12px rgba(0, 0, 0, 0.1);
+}
+.product-image img {
+    max-width: 100%;
+    border-radius: 10px;
+    object-fit: cover;
+    margin-bottom: 40px;
+}
+.product-title {
+    font-size: 2rem;
+    font-weight: bold;
+}
+.product-price {
+    font-size: 1.5rem;
+    color: #027831;
+    font-weight: bold;
+    margin: 10px 0;
+}
+.product-description {
+    font-size: 1.1rem;
+    margin: 15px 0;
+}
+.btn-custom {
+    background-color: #027831;
+    color: white;
+    font-size: 1.1rem;
+}
+.btn-custom:hover {
+    background-color: #025f28;
+}
+.product-container {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+}
+
+html, body {
+    height: 100%;
+    margin: 0;
+}
+
+.container {
+    min-height: 100vh; /* Asegura que el contenido ocupe al menos el 100% de la altura de la pantalla */
+    display: flex;
+    flex-direction: column;
+}
+
+footer {
+    margin-top: auto; /* Empuja el footer al final */
+    background-color: #000; /* Puedes cambiar el color si lo deseas */
+    color: #fff;
+    padding: 10px;
+    text-align: center;
+}

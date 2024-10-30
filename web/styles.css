@@ -1,0 +1,385 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: Arial, sans-serif !important;
+}
+
+.header-container {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 10px;
+    background-color: white;
+    color: black;
+}
+
+.logo img {
+    width: 250px;
+    margin-left: 300px;
+}
+
+.contact-info {
+    font-size: 0.8rem;
+    margin-right: 300px;
+}
+
+.contact-info p {
+    margin: 2px 0; /* Controla el espaciado superior e inferior */
+    padding: 0; /* Elimina cualquier relleno adicional */
+}
+
+/* Navbar */
+
+.navbar-nav {
+    display: flex;
+    justify-content: center;
+    gap: 30px; /* Espacio entre los enlaces en pantallas grandes */
+}
+
+.nav-link {
+    color: #FFFFFF !important;
+    font-weight: 600 !important;
+    font-size: 18px !important; /* Tamaño de fuente para pantallas grandes */
+    transition: color 0.3s ease-in-out !important;
+}
+
+.nav-link:hover {
+    color: #f7dd00 !important; /* Efecto hover */
+}
+
+/* Estilos del dropdown */
+.dropdown {
+  position: absolute;
+  right: 70px; /* Ajusta según la distancia que desees del borde derecho */
+  top: 35%;
+  transform: translateY(-50%);
+  z-index: 999; /* Asegura que el dropdown esté por encima de otros elementos */
+}
+
+.dropdown .btn {
+  background-color: white; /* Color de fondo del dropdown */
+  color: #004b23;
+}
+
+/* Estilos del menú desplegable para que esté sobre el carrusel */
+.dropdown-menu {
+  z-index: 1000; /* Mayor nivel para estar por encima del carrusel */
+  position: absolute; /* Asegura que el menú se desplace correctamente */
+}
+
+
+
+
+/* Posiciona el carrito en la esquina inferior izquierda */
+.carrito {
+    position: fixed; /* Fija la posición */
+    bottom: 20px;    /* Distancia desde la parte inferior */
+    right: 30px;      /* Distancia desde el lado izquierdo */
+    z-index: 1000;   /* Asegura que esté por encima de otros elementos */
+    background-color: #004b23; /* Color de fondo opcional */
+    border-radius: 50%; /* Hace que sea redondeado */
+    padding: 10px; /* Espaciado interno */
+    box-shadow: 0 2px 8px rgba(0, 0, 0, 0.2); /* Sombra para efecto de elevación */
+    transition: transform 0.3s ease; /* Suaviza la animación */
+}
+
+/* Efecto de agrandamiento al pasar el mouse */
+.carrito:hover {
+    transform: scale(1.1); /* Aumenta el tamaño ligeramente */
+}
+
+.carrito a {
+    color: #FFFFFF; /* Color del texto */
+    font-weight: 600; /* Negrita */
+    display: flex; /* Usa flexbox para centrar el contenido */
+    align-items: center; /* Centra verticalmente */
+}
+
+.carrito img {
+    width: 40px; /* Tamaño de la imagen del carrito */
+}
+
+
+
+/* Sección de productos */
+.menu-section {
+    background-color: #f7f7f7;
+}
+
+.card {
+    width: 20rem;
+    border: none;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1); /* Sombra sutil */
+    transition: transform 0.3s ease-in-out;
+    display: flex;
+    flex-direction: column;
+    height: 100%; /* Para asegurar que todas las tarjetas tengan la misma altura */
+}
+
+.card:hover {
+    transform: scale(1.05); /* Zoom al pasar el cursor */
+}
+
+.card-header {
+    background-color: #027831;
+    color: #FFFFFF;
+    text-align: center;
+    font-weight: bold;
+}
+
+.card-footer {
+    text-align: center;
+    background-color: #027831;
+    color: #FFFFFF;
+    margin-top: auto; /* Empuja el footer hacia abajo */
+}
+
+.custom-btn {
+    background-color: #004b23;
+    color: #FFFFFF;
+    border-color: #FFFFFF;
+    transition: background-color 0.3s ease-in-out;
+}
+
+.custom-btn:hover {
+    background-color: #f7dd00;
+    color: #027831;
+    border-color: #f7dd00;
+}
+
+/* Ajuste del cuerpo de las tarjetas */
+.card-body {
+    text-align: center;
+    flex-grow: 1; /* Hace que el cuerpo crezca para llenar el espacio */
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+}
+
+.card-img-top {
+    width: 60%; /* Para que la imagen ocupe todo el ancho disponible de la tarjeta */
+    height: 300px; /* Ajusta este valor para cambiar la altura de la imagen */
+    object-fit: cover; /* Asegura que la imagen mantenga su proporción sin distorsión */
+}
+
+.card-img-top {
+    width: 100%; /* O el tamaño que prefieras */
+    height: 350px; /* Puedes ajustar la altura */
+    object-fit: contain; /* Para que la imagen se ajuste sin cortarse */
+    display: block;
+    margin: 0 auto; /* Centra horizontalmente */
+}
+
+
+.card-body i {
+    margin-top: 10px;
+}
+
+/* Descripción de las tarjetas */
+.card-footer {
+    margin-top: auto; /* Empuja el footer hacia abajo */
+    text-align: center;
+    background-color: #027831;
+    color: #FFFFFF;
+    padding: 10px;
+    height: 80px; /* Altura fija para todos los footers */
+}
+
+/* Footer */
+footer {
+    background-color: #333;
+    padding: 20px;
+    color: #FFFFFF;
+    text-align: center;
+}
+
+footer p {
+    margin: 0;
+    font-size: 14px;
+}
+
+/*verProducto*/
+
+.product-details {
+    padding: 20px;
+    background-color: #f9f9f9;
+    border-radius: 10px;
+    box-shadow: 0px 4px 12px rgba(0, 0, 0, 0.1);
+}
+.product-image img {
+    max-width: 100%;
+    border-radius: 10px;
+    object-fit: cover;
+    margin-bottom: 40px;
+}
+.product-title {
+    font-size: 2rem;
+    font-weight: bold;
+}
+.product-price {
+    font-size: 1.5rem;
+    color: #027831;
+    font-weight: bold;
+    margin: 10px 0;
+}
+.product-description {
+    font-size: 1.1rem;
+    margin: 15px 0;
+}
+.btn-custom {
+    background-color: #027831;
+    color: white;
+    font-size: 1.1rem;
+}
+.btn-custom:hover {
+    background-color: #025f28;
+}
+.product-container {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+}
+
+html, body {
+    height: 100%;
+    margin: 0;
+}
+
+.container {
+    min-height: 100vh; /* Asegura que el contenido ocupe al menos el 100% de la altura de la pantalla */
+    display: flex;
+    flex-direction: column;
+}
+
+footer {
+    margin-top: auto; /* Empuja el footer al final */
+    background-color: #000; /* Puedes cambiar el color si lo deseas */
+    color: #fff;
+    padding: 10px;
+    text-align: center;
+}
+
+/*carrito */
+
+.cart-container {
+    position: absolute; /* Cambia esto de "absolute" a "fixed" si quieres que se mantenga en la pantalla al desplazarte */
+    right: 350px; /* Esto asegura que el cuadro esté pegado al lado derecho */
+    top: 300px; /* Ajusta esto según la posición vertical que desees */
+    margin: 0; /* Elimina el margen derecho */
+    padding: 20px;
+    background-color: #fff;
+    border-radius: 10px;
+    box-shadow: 0px 4px 12px rgba(0, 0, 0, 0.1);
+    max-width: 400px;
+}
+
+
+.cart-container h2 {
+    color: #027831;
+    font-size: 1.8rem;
+    margin-bottom: 20px;
+    font-weight: bold;
+}
+
+.cart-item {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    margin-bottom: 20px;
+    border-bottom: 1px solid #e0e0e0;
+    padding-bottom: 15px;
+}
+
+.item-details {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+
+.product-image {
+    width: 70px;
+    height: 70px;
+    object-fit: contain;
+    border-radius: 5px;
+    margin-right: 10px;
+}
+
+.item-description {
+    font-size: 0.9rem;
+    text-align: left;
+    flex-grow: 1;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+}
+
+.item-description p {
+    margin: 2px 0;
+}
+
+.item-price {
+    font-size: 1.1rem;
+    font-weight: bold;
+    margin-left: 15px;
+    align-self: flex-start; /* Ensure the price aligns to the top */
+}
+
+.quantity-controls {
+    display: flex;
+    align-items: center;
+    margin-top: 10px;
+    font-size: 1rem !important;
+}
+
+.quantity-controls input {
+    text-align: center;
+    border: 1px solid #ddd;
+    border-radius: 0px;
+    width: 58px !important;
+}
+
+.btn-minus, .btn-plus {
+    background-color: #027831;
+    color: white;
+    border: none;
+    padding: 5px 10px;
+    cursor: pointer;
+    font-size: 1rem;
+}
+
+.btn-minus:hover, .btn-plus:hover {
+    background-color: #025f28;
+}
+
+.item-subtotal {
+    display: flex;
+    justify-content: flex-end;
+    margin-top: 10px;
+    font-size: 1rem;
+    font-weight: bold;
+}
+
+.cart-summary {
+    text-align: right;
+    margin-top: 20px;
+}
+
+.cart-summary p {
+    display: flex;
+    justify-content: space-between;
+    font-size: 1rem;
+}
+
+.cart-summary h3 {
+    display: flex;
+    justify-content: space-between;
+    color: #027831;
+    font-size: 1.5rem;
+    margin-top: 15px;
+    font-weight: bold;
+}
