@@ -214,9 +214,9 @@
                     <label for="metodoPago">Método de Pago:</label>
                     <select id="metodoPago" name="metodoPago" class="form-control" required>
                         <option value="">Selecciona un método</option>
-                        <option value="Yape">Yape</option>
-                        <option value="Plin">Plin</option>
-                        <option value="Transferencia Bancaria">Transferencia bancaria</option>
+                        <option value="Yape">Yape: 958623176</option>
+                        <option value="Plin">Plin: 958623166</option>
+                        <option value="Transferencia Bancaria">Transferencia bancaria: 838-234-24243434567-53</option>
                     </select>
                 </div>
 
